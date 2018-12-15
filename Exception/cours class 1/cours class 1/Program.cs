@@ -36,7 +36,7 @@ namespace cours_class_1
                 Person person3 = new Person(81);
                 //Console.WriteLine(person3.Age);
             }
-            catch(Exception e)
+            catch(ArgumentException e) //uneori putem pune aici Exception in loc de ArgumentException, si cuprinde toate excpetiile
             {
                 //Person persone2 = new Person(2);
                 //this will show all the errors
@@ -45,10 +45,10 @@ namespace cours_class_1
                 //throw;
                 //Person persone2 = new Person(2);
             }
-            //catch(DressCodeException ex)
-            //{
-            //    Console.WriteLine(ex.Message + ex.GetType());
-            //}
+            catch(DressCodeException ex)
+            {
+                Console.WriteLine(ex.Message + ex.GetType());
+            }
 
 
 
